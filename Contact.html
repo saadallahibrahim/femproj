@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+         *{
+            margin: 0;
+            
+        }
+        /* header style start here*/
+        .header{
+            
+            background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+            url(/photos/dot.jpg);
+            min-height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 3% 4% ;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .logo{
+            color: white;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+        .navs>ul>li{
+            display: inline-block;
+            list-style: none;
+            color: white;
+            padding: 10px 12px;
+            text-decoration: none;
+        }
+        .navs>ul>li>a{
+            color: white;
+            text-decoration: none;
+        }
+        .navs>ul>li:hover{
+            background-color: rgba(180, 33, 33, 0.934);
+            border-radius: 12px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
+        /* header style start here*/
+
+
+        /* form style start here */
+        .form{
+            width: 300px;
+            box-shadow: 0 0 3px 0 rgb(0,0,0,0.3);
+            background: white;
+            padding: 50px;
+            margin: 1% auto 0;
+            text-align: center;
+    
+        }
+        input{
+            margin-bottom: 4%;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid  rgb(254, 7, 7);
+            border-radius: 10px;
+            letter-spacing: 2px;
+        }
+        .textarea{
+            border: 1px solid  rgb(254, 7, 7);
+            border-radius: 10px;
+            letter-spacing: 1px;
+            margin-bottom: 6%;
+        }
+        .submit{
+            padding: 10px;
+            
+            text-decoration: none;
+            letter-spacing: 1px;
+            border-radius: 10px 0;
+            color: rgb(23, 23, 123);
+            border: 1px solid rgb(254, 7, 7);
+            
+        }
+        .submit:hover{
+            background-color: brown;
+            text-transform: uppercase;
+            font-size: 10px;
+            transition: 0.5s;
+        }
+        .form>h1{
+            margin-bottom: 5%;
+            color: rgb(254, 7, 7);
+            letter-spacing: 2px;
+            font-size: 30px;
+
+        }
+        
+        /* form style start here */
+        @media(max-width: 360px){
+            .navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 1% 1% ;
+            text-align: center;
+            }
+            .logo{
+                font-size: 20px;
+                color: brown;
+            }
+            .navs>ul>li{
+                padding: 5% 2%;
+
+            }
+            .form{
+                width: 200px;
+                margin: 10% auto 0;
+                padding: 10%;
+            }
+            .form h1{
+                margin-bottom: 7%;
+                text-transform: uppercase;
+                font-size: 20px;
+                letter-spacing: 1px;
+                margin-left: 7%;
+            }
+            input{
+                margin-bottom: 6%;
+            }
+            .textarea{
+                width: 16em;
+                margin-bottom: 10%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <!-- header section start here-->
+     <section class="header">
+        <nav class="navbar">
+        <div class="logo">I.B GHANI</div>
+        <div class="navs">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/#boxs-text">About</a></li>
+                <li><a href="/#campus">Services</a></li>
+                <li><a href="/#the-manager">The Manager</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+     <!-- form section  start here-->
+    <div class="form">
+        <h1>Contact Us</h1>
+        <form action="Post">
+            <input type="text" placeholder="FirstName" required><br>
+            <input type="text" placeholder="LastName" required><br>
+            <input type="email" placeholder="Name@gmail.com"  required><br>
+            <textarea name="text" id="comment" cols="41" rows="10" class="textarea">Your Comment here!</textarea><br>
+            <a href="#" class="submit" id="submit" onsubmit="showMe">Send</a>
+        </form>
+    </div>
+     <!-- form section  ends here-->
+    </section>
+    <!-- header section ends here-->
+</body>
+</html>
